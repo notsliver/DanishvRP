@@ -1,40 +1,38 @@
 set es_enableCustomData 1
-endpoint_add_tcp "0.0.0.0:30120" 
-endpoint_add_udp "0.0.0.0:30120" 
+endpoint_add_tcp "0.0.0.0:26297"
+endpoint_add_udp "0.0.0.0:26297"
 
-set mysql_connection_string "N/A"
+set mysql_connection_string "user=root;database=database;password=;charset=utf8mb4"
 
 exec resources.cfg
 
-sv_hostname "N/A" # Serverens hostnavn
+sv_hostname "My new FXServer!"
 
-sets sv_projectName "N/A" # Serverens projekt navn
-
-sets sv_projectDesc "N/A" # Serverens projekt beskrivelse
+sets sv_projectName "[DK] Server lavet i sammenarbejde med FlaxHosting.com" # Serverens projekt navn
+sets sv_projectDesc "Sentura Cloud" # Serverens projekt beskrivelse
 
 sets banner_detail "https://cdn.discordapp.com/attachments/899082911951765514/1040353638813548575/Banner.png"
 sets banner_connecting "https://cdn.discordapp.com/attachments/899082911951765514/1040353638813548575/Banner.png"
 
 sets tags "Dansk Community, RP, Dansk RP, DK, FlaxHosting, roleplay, Onesync, Anti Cheat, vrp"
-sets Discord "https://discord.gg/vpshost"
-sets FlaxHosting "Sentura.cloud"
+sets Discord "https://discord.gg/pbv7zCeUNh"
+sets FlaxHosting "FlaxHosting.com"
 
 add_ace resource.uptime command.sets allow
 
 # Antal Server slots
-sv_maxclients 64
-# Indsæt licensekey her
-sv_licenseKey "{FIVEM_LICENSE}"
-# Indsæt webApiKey her
-set steam_webApiKey "API_KEY"
+sv_maxclients ${MAX_PLAYERS}
+# Insert license key here
+sv_licenseKey ${FIVEM_LICENSE}
+# Insert webApiKey here
+set steam_webApiKey ${STEAM_WEBAPIKEY}
 
 set sv_enforceGameBuild 3095
 
 add_ace resource.uptime command.sets allow
 
-add_ace group.admin command allow # allow all commands
-
-add_ace group.admin command.quit deny # but don't allow quit
+add_ace group.admin command allow # Allow all commands
+add_ace group.admin command.quit deny # But don't allow quit
 
 add_principal identifier.steam:11000010f7659e3 group.admin # Kian
 
