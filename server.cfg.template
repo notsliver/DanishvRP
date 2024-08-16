@@ -8,7 +8,7 @@ exec resources.cfg
 
 sv_hostname "My new FXServer!"
 
-sets sv_projectName "[DK] Server lavet i sammenarbejde med FlaxHosting.com" # Serverens projekt navn
+sets sv_projectName "[DK] Server lavet i sammenarbejde med Sentura Cloud" # Serverens projekt navn
 sets sv_projectDesc "Sentura Cloud" # Serverens projekt beskrivelse
 
 sets banner_detail "https://cdn.discordapp.com/attachments/899082911951765514/1040353638813548575/Banner.png"
@@ -16,7 +16,7 @@ sets banner_connecting "https://cdn.discordapp.com/attachments/89908291195176551
 
 sets tags "Dansk Community, RP, Dansk RP, DK, FlaxHosting, roleplay, Onesync, Anti Cheat, vrp"
 sets Discord "https://discord.gg/pbv7zCeUNh"
-sets FlaxHosting "FlaxHosting.com"
+sets FlaxHosting "sentura.cloud"
 
 add_ace resource.uptime command.sets allow
 
